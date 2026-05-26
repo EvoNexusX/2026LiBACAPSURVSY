@@ -1,314 +1,148 @@
-# Robust BACAP Benchmark Framework
+# Robust BACAP Experiment Code
 
-## Project Overview
+This directory contains the MATLAB code used for the experimental part of the paper. It focuses on the Berth Allocation and Quay Crane Allocation Problem (BACAP) under uncertainty. The codebase is mainly organized into four parts: algorithm implementations, benchmark and data-generation scripts, parallel experiment scripts, and shared utility modules.
 
-This project targets the integrated Berth Allocation and Quay Crane Allocation Problem (BACAP) under uncertainty, and provides a standardized benchmark framework for studying the application of robust optimization and metaheuristic algorithms to port scheduling problems.
-
-The framework:
-
-- Supports datasets covering four vessel arrival patterns;
-- Provides an integration framework that combines classical metaheuristics (GA / PSO / ACO) with robust strategies;
-- Supports the simulation of multiple uncertainty scenarios;
-- Provides unified performance and robustness evaluation metrics;
-- Supports parallel experiments and batch execution.
-
----
-
-# Overall Project Structure
+## Directory Structure
 
 ```text
-Root/
-│
-├── code/                    # Main directory for algorithm code
-│
-├── datasets/                # Dataset directory
-│
-└── README.md
+Main Code/
+|-- Algorithm/
+|   |-- C7_1.m
+|   |-- C8_1.m
+|   `-- C9_1.m
+|-- Benchmark/
+|   |-- Arrival Simulation.m
+|   |-- benchmark.m
+|   |-- evaluate_robustness.m
+|   `-- generate_separate_csv_for_ships_and_berths_text_compliant.m
+|-- Experiment/
+|   `-- test_3_flat.m
+|-- Modules/
+|   |-- load_data.m
+|   |-- generate_scenarios.m
+|   |-- decode_solution.m
+|   |-- check_constraints.m
+|   |-- assign_qcs.m
+|   |-- evaluate_fitness_minmax.m
+|   |-- evaluate_fitness_expectation.m
+|   |-- evaluate_fitness_adjustable.m
+|   `-- visualize_solution.m
+`-- readme.md
 ```
 
----
+## Folder Description
 
-# 1. The `code` Folder
+### 1. `Algorithm`
 
-The `code` folder contains the algorithm core, robust strategies, evaluation modules, uncertainty generators, and experiment scripts.
+The `Algorithm` folder contains the main programs that combine basic metaheuristic algorithms with robust strategies. The overall research idea is to integrate three basic metaheuristics with different robust decision strategies for solving BACAP instances under uncertainty.
 
-## 1.1 Algorithm and Robust Strategy Combinations
+The current directory includes scripts such as:
 
-The code includes:
+- `C7_1.m`
+- `C8_1.m`
+- `C9_1.m`
 
-- Three metaheuristic algorithms:
-  - GA (Genetic Algorithm)
-  - PSO (Particle Swarm Optimization)
-  - ACO (Ant Colony Optimization)
+These scripts serve as executable main functions for specific algorithm-strategy combinations. Their main tasks include:
 
-- Three robust strategies
+- reading ship and quay crane data;
+- generating uncertainty scenarios;
+- optimizing solutions through the corresponding fitness evaluation functions;
+- decoding the final solution into berth and quay crane assignments;
+- exporting the results.
 
-These combine into:
+Based on the current implementation, the robust strategies mainly correspond to the following evaluation modes:
+
+- `evaluate_fitness_minmax.m`: min-max or worst-case robust evaluation;
+- `evaluate_fitness_expectation.m`: expectation-based robust evaluation;
+- `evaluate_fitness_adjustable.m`: adjustable robust evaluation.
+
+Note: the batch experiment script `Experiment/test_3_flat.m` is written in the format `C1_1` to `C9_1`, so in the complete framework this folder represents combinations of three basic metaheuristic algorithms and multiple robust strategies.
+
+### 2. `Benchmark`
+
+The `Benchmark` folder is used for benchmark generation, arrival-pattern construction, and performance evaluation of algorithm outputs.
+
+Main files include:
+
+- `Arrival Simulation.m`  
+  Used to generate different vessel arrival disturbance patterns. According to the current script, it supports four typical arrival modes:
+  - uniform disturbance;
+  - Gaussian disturbance;
+  - chaotic disturbance;
+  - periodic disturbance.
+
+- `generate_separate_csv_for_ships_and_berths_text_compliant.m`  
+  Used to generate ship data, berth/quay crane data, and related uncertainty information. It serves as an important data generator for the experiments.
+
+- `benchmark.m`  
+  Used to evaluate the scheduling solutions produced by the algorithms. In the current implementation, it mainly computes:
+  - average port time;
+  - robustness-related performance values.
+
+- `evaluate_robustness.m`  
+  Used to calculate the robustness metric. In the current code, the robustness index is constructed based on factors such as tidal windows, berth conflicts, quay crane conflicts, and survival time.
+
+Therefore, the `Benchmark` folder can be understood as the directory that contains the generator, the four vessel arrival patterns, and the evaluation metrics.
+
+### 3. `Experiment`
+
+The `Experiment` folder stores the scripts for batch experiments and parallel execution.
+
+The core script is:
+
+- `test_3_flat.m`
+
+Its main functions include:
+
+- building a task list for different datasets, algorithms, and repeated runs;
+- using `parpool` and `parfor` for parallel computing;
+- running each algorithm 25 times;
+- reading the result file generated by each run;
+- calling `benchmark.m` to compute evaluation metrics;
+- aggregating and saving all experimental results.
+
+This part is therefore the main implementation of the parallel 25-run experiment process.
+
+### 4. `Modules`
+
+The `Modules` folder contains shared code modules reused by the basic metaheuristic algorithms and their robust variants. These modules provide the lower-level support functions needed by the main algorithm scripts.
+
+Main modules include:
+
+- `load_data.m`: reads ship and quay crane data;
+- `generate_scenarios.m`: generates uncertainty scenarios;
+- `decode_solution.m`: decodes an encoded solution into a scheduling plan;
+- `check_constraints.m`: checks feasibility and constraint satisfaction;
+- `assign_qcs.m`: handles quay crane assignment;
+- `evaluate_fitness_minmax.m`, `evaluate_fitness_expectation.m`, `evaluate_fitness_adjustable.m`: compute fitness values under different robust strategies;
+- `visualize_solution.m`: visualizes the scheduling result.
+
+This folder can be viewed as the shared function library for the algorithm implementations.
+
+## How to Run
+
+It is recommended to run the code in MATLAB. For batch experiments, MATLAB Parallel Computing Toolbox is recommended.
+
+A typical workflow is as follows:
+
+1. Prepare the input data files for ships, quay cranes, tidal windows, and other related information.
+2. Modify the dataset settings, algorithm list, repetition count, and parallel parameters in `Experiment/test_3_flat.m` as needed.
+3. To test a single algorithm, run the corresponding main script in the `Algorithm` folder.
+4. To perform batch comparison experiments, run `Experiment/test_3_flat.m`.
+5. Use the scripts in `Benchmark` to evaluate and analyze the generated scheduling results.
+
+## Output Files
+
+After running an algorithm, the output is typically saved in files named as follows:
 
 ```text
-9 algorithm-strategy combinations
+C*_1_result_d*_r*.csv
 ```
 
-The corresponding directories are organized as follows:
+After all batch experiments are completed, `test_3_flat.m` further saves the aggregated results into a `.mat` file for later statistical analysis and figure generation.
 
-```text
-C1_1/
-C2_1/
-...
-C9_1/
-```
+## Notes
 
-Where:
-
-| ID | Meaning |
-|---|---|
-| C1_1, C4_1, C7_1 | Algorithm + Strategy 1 |
-| C2_1, C5_1, C8_1 | Algorithm + Strategy 2 |
-| C3_1, C6_1, C9_1 | Algorithm + Strategy 3 |
-
----
-
-## 1.2 Main Function Description
-
-Inside each algorithm folder, the file:
-
-```text
-C<number>_1.m
-```
-
-serves as the main function for the corresponding algorithm combination.
-
-For example:
-
-```text
-C1_1.m
-```
-
-is:
-
-- A specific metaheuristic algorithm
-- Combined with its corresponding robust strategy as the main program entry point.
-
----
-
-## 1.3 The `benchmark` Folder
-
-```text
-benchmark/
-```
-
-This directory is used for:
-
-- Schedule evaluation;
-- Robustness metric computation;
-- General performance metric statistics.
-
-Includes:
-
-- Average port time;
-- Survival time;
-
-```text
-generator/
-```
-
-This directory is used to simulate uncertainty scenarios.
-
-It supports the following uncertainties:
-
-| Uncertainty Type | Description |
-|---|---|
-| Vessel Arrival Time Uncertainty | Arrival Time Uncertainty |
-| Vessel Handling Time Uncertainty | Handling Duration Uncertainty |
-| Quay Crane Availability Uncertainty | Quay Crane Availability Uncertainty |
-| Mixed Uncertainty Scenarios | Mixed Uncertainty |
-
-This module is used to generate perturbation scenarios and robustness testing environments.
----
-
-## 1.4 The `modules` Folder
-
-```text
-modules/
-```
-
-This directory contains:
-
-- Common functions shared across algorithms;
-- Decoding functions;
-- Repair functions;
-- Evaluation functions;
-- Utility functions, etc.
-
-It supports module reuse across different algorithms and robust strategies.
-
----
-
-## 1.5 The `experiment` Folder
-
-```text
-experiment/
-```
-
-Where:
-
-```text
-test_3_flat.m
-```
-
-is the main script for parallel experiments.
-
-Its functions include:
-
-- Batch execution of the 9 algorithms;
-- Multiple repeated trials;
-- Parallel computation;
-- Experiment statistics.
-
----
-
-# 2. The `datasets` Folder
-
-The dataset directory contains:
-
-- Datasets for four vessel arrival patterns;
-- Tidal time windows;
-- Uncertainty data;
-- Raw vessel and quay crane data.
-
----
-
-## 2.1 Dataset Scale
-
-Dataset files follow this naming convention:
-
-| File Name | Vessel Scale |
-|---|---|
-| 1_1 | 50 vessels |
-| 1_11 | 100 vessels |
-| 1_111 | 200 vessels |
-
----
-
-## 2.2 Uncertainty Annotation
-
-### Vessel Arrival Time Uncertainty
-
-Identified using:
-
-```text
-_a
-```
-
-as the suffix.
-
----
-
-### Vessel Handling Time Uncertainty
-
-Identified using:
-
-```text
-_h
-```
-
-as the suffix.
-
----
-
-### Quay Crane Availability Uncertainty
-
-Described using the file:
-
-```text
-berth_data.csv
-```
-
----
-
-## 2.3 Raw Datasets
-
-The dataset folder contains the following raw files:
-
-| File Name | Description |
-|---|---|
-| ships_50.xlsx | Raw data for 50 vessels |
-| ships_100.xlsx | Raw data for 100 vessels |
-| ships_200.xlsx | Raw data for 200 vessels |
-| 2.xlsx | Raw quay crane availability data |
-
----
-
-# 3. How to Modify the Experimental Dataset
-
-To switch between different datasets for experiments, modify the data-loading section in:
-
-```text
-code/experiment/test_3_flat.m
-```
-
-Modifiable items include:
-
-- Vessel scale;
-- Uncertainty scenarios;
-- Dataset paths;
-- Experiment parameters;
-- Number of repetitions, etc.
-
----
-
-# 4. Supported Uncertainty Types
-
-The framework supports the following four categories of uncertainty:
-
-| Type | Description |
-|---|---|
-| UAT | Vessel Arrival Time Uncertainty |
-| UHD | Vessel Handling Time Uncertainty |
-| UQC | Quay Crane Availability Uncertainty |
-| MU | Mixed Uncertainty Scenarios |
-
----
-
-# 5. Performance Evaluation Metrics
-
-The system uses:
-
-## General Performance Metrics
-
-- Average Port Time
-- Makespan (completion time)
-- Scheduling Efficiency
-
-## Robustness Metrics
-
-- Stability
-- Survival Time
-- Robustness Evaluation Index
-
-These are used to comprehensively assess scheduling performance under uncertainty.
-
----
-
-# 6. Recommended Workflow
-
-The recommended execution steps are:
-
-```text
-1. Select the dataset scale
-2. Configure the uncertainty scenario
-3. Modify parameters in test_3_flat.m
-4. Run the main function of the chosen algorithm
-5. Call the benchmark module for evaluation
-6. Aggregate experimental results
-```
-
----
-
-# 7. Notes
-
-- It is recommended to run experiments with the MATLAB Parallel Computing Toolbox;
-- Large-scale instances should be run with parallel computation;
-- Ensure dataset consistency across different uncertainty scenarios;
-- Evaluation metrics in the benchmark must match the experiment configuration.
-
+- This README describes the code structure inside the current `Main Code` directory only, rather than the entire paper project.
+- The current experiment script still uses the naming pattern from `C1_1` to `C9_1`. If only part of the algorithms is kept in this directory, it is recommended to check the `algo_names` list and the corresponding `addpath` settings.
+- Since different experiments may use different data file names, please verify the data paths and input formats used in `Algorithm`, `Benchmark`, and `Experiment` before running the code.
