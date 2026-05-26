@@ -14,7 +14,7 @@ Main Code/
 |   |-- Arrival Simulation.m
 |   |-- benchmark.m
 |   |-- evaluate_robustness.m
-|   `-- generate_separate_csv_for_ships_and_berths_text_compliant.m
+|   `-- generate_separate_csv_for_vessels_and_berths_text_compliant.m
 |-- Experiment/
 |   `-- test_3_flat.m
 |-- Modules/
@@ -44,7 +44,7 @@ The current directory includes scripts such as:
 
 These scripts serve as executable main functions for specific algorithm-strategy combinations. Their main tasks include:
 
-- reading ship and quay crane data;
+- reading vessel and quay crane data;
 - generating uncertainty scenarios;
 - optimizing solutions through the corresponding fitness evaluation functions;
 - decoding the final solution into berth and quay crane assignments;
@@ -72,7 +72,7 @@ Main files include:
   - periodic disturbance.
 
 - `generate_separate_csv_for_ships_and_berths_text_compliant.m`  
-  Used to generate ship data, berth/quay crane data, and related uncertainty information. It serves as an important data generator for the experiments.
+  Used to generate vessel data, berth/quay crane data, and related uncertainty information. It serves as an important data generator for the experiments.
 
 - `benchmark.m`  
   Used to evaluate the scheduling solutions produced by the algorithms. In the current implementation, it mainly computes:
@@ -109,7 +109,7 @@ The `Modules` folder contains shared code modules reused by the basic metaheuris
 
 Main modules include:
 
-- `load_data.m`: reads ship and quay crane data;
+- `load_data.m`: reads vessel and quay crane data;
 - `generate_scenarios.m`: generates uncertainty scenarios;
 - `decode_solution.m`: decodes an encoded solution into a scheduling plan;
 - `check_constraints.m`: checks feasibility and constraint satisfaction;
@@ -125,7 +125,7 @@ It is recommended to run the code in MATLAB. For batch experiments, MATLAB Paral
 
 A typical workflow is as follows:
 
-1. Prepare the input data files for ships, quay cranes, tidal windows, and other related information.
+1. Prepare the input data files for vessels, quay cranes, tidal windows, and other related information.
 2. Modify the dataset settings, algorithm list, repetition count, and parallel parameters in `Experiment/test_3_flat.m` as needed.
 3. To test a single algorithm, run the corresponding main script in the `Algorithm` folder.
 4. To perform batch comparison experiments, run `Experiment/test_3_flat.m`.
