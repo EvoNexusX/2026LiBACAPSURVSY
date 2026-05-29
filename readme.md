@@ -20,13 +20,13 @@ The literature is divided into two main groups:
 - <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span>  
   Metaheuristics with explicit robustness-oriented mechanisms
 
-- <span style="background:#ef6c00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploration</span>  
+-- <span style="background:#ef6c00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploration</span>  
   Robust exploration
 
-- <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>  
+-- <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>  
   Robust exploitation
 
-- <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>  
+-- <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>  
   Adaptive search regulation
 
 ---
