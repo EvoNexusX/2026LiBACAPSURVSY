@@ -12,11 +12,6 @@ The BACAP problem is a core issue in port scheduling, aiming to allocate berths 
 
 The experimental framework of this paper is inspired by the following works. To help readers quickly locate relevant studies, we classify them by **representation scheme** and **robust search mechanism**.
 
-> 🏷 Tag Descriptions:
-> - `[Direct]` `[Indirect]` `[Hybrid]` `[Structured]` denote representation schemes.
-> - `[Robust-Search]` `[Robust-Exploration]` `[Adaptive]` denote robust search subcategories.
-> - Click `[Paper]` to access the original publication.
-
 ---
 
 #### I. Without Robust Strategies
