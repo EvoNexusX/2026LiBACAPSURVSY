@@ -20,39 +20,6 @@ The literature is divided into two main groups:
 - <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span>  
   Metaheuristics with explicit robustness-oriented mechanisms
 
-- <span style="background:#e67e22;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">GA</span>  
-  Genetic algorithm
-
-- <span style="background:#d35400;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">ACO</span>  
-  Ant colony optimization
-
-- <span style="background:#7f8c8d;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Memetic</span>  
-  Memetic / hybrid local-improvement framework
-
-- <span style="background:#2980b9;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">MOEA</span>  
-  Multi-objective evolutionary/metaheuristic method
-
-- <span style="background:#ad1457;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Hybrid</span>  
-  Hybrid metaheuristics
-
-- <span style="background:#2c3e50;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">RL</span>  
-  Reinforcement learning or learning-assisted search
-
-- <span style="background:#f39c12;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Expected</span>  
-  Expected-performance evaluation
-
-- <span style="background:#8e44ad;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Worst-Case</span>  
-  Worst-case or min-max evaluation
-
-- <span style="background:#c2185b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Risk/Stability</span>  
-  Risk-, regret-, or stability-aware robustness
-
-- <span style="background:#6a1b9a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DRO</span>  
-  Distributionally robust optimization
-
-- <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>  
-  Recourse-aware / time-adaptive mechanism
-
 - <span style="background:#ef6c00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploration</span>  
   Robust exploration
 
@@ -61,33 +28,6 @@ The literature is divided into two main groups:
 
 - <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>  
   Adaptive search regulation
-
-- <span style="background:#546e7a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Penalty</span>  
-  Penalty-based feasibility control
-
-- <span style="background:#1e88e5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Repair</span>  
-  Repair-based restoration
-
-- <span style="background:#6d4c41;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Decoder</span>  
-  Representation / decoder-integrated feasibility handling
-
-- <span style="background:#2e7d32;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Feasibility</span>  
-  Recourse / robust feasibility coordination
-
-- <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>  
-  Scenario-based uncertainty modeling
-
-- <span style="background:#7cb342;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Set-Based</span>  
-  Set-based / interval-based uncertainty
-
-- <span style="background:#fbc02d;color:black;padding:2px 6px;border-radius:4px;font-size:0.9em;">Fuzzy</span>  
-  Fuzzy-based uncertainty
-
-- <span style="background:#26a69a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Distribution</span>  
-  Distribution-based uncertainty
-
-- <span style="background:#ab47bc;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Ambiguity</span>  
-  Distributional ambiguity
 
 ---
 
