@@ -109,15 +109,11 @@ The literature is divided into two main groups:
 - **Al Samrout et al.**: "An improved genetic algorithm for the berth scheduling with ship-to-ship transshipment operations integrated model," 2024. https://doi.org/10.1016/j.cor.2023.106409 <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#e67e22;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">GA</span>
 - **Zhao et al.**: "DHMoGA BQCS: A Dynamic Heuristic Multi-Objective Genetic Algorithm for Berth Allocation and Quay Crane Assignment," 2026. <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#e67e22;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">GA</span> <span style="background:#2980b9;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">MOEA</span>
 
-### A2. Particle Swarm Optimization (PSO)
-
-- No clear non-robust uncertain-BACAP PSO paper is currently prominent in the present `ref.bib`. Most PSO papers in the bibliography explicitly belong to robust scheduling.
-
-### A3. Differential Evolution (DE)
+### A2. Differential Evolution (DE)
 
 - **Şahin and Kuvvetli**: "Differential evolution based meta-heuristic algorithm for dynamic continuous berth allocation," 2016. <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#16a085;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DE</span>
 
-### A4. Ant Colony Optimization (ACO)
+### A3. Ant Colony Optimization (ACO)
 
 - **Tong et al.**: "Ant colony optimization for the ship berthing problem," 1999. https://doi.org/10.1007/3-540-46674-6_30 <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#d35400;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">ACO</span>
 - **Cheong and Tan**: "A multi-objective multi-colony ant algorithm for solving the berth allocation problem," 2008. https://link.springer.com/chapter/10.1007/978-3-540-87333-6_4 <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#d35400;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">ACO</span> <span style="background:#2980b9;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">MOEA</span>
@@ -126,19 +122,19 @@ The literature is divided into two main groups:
 - **Wang et al.**: "An adaptive ant colony system based on variable range receding horizon control for berth allocation problem," 2022. https://doi.org/10.1109/TITS.2022.3167456 <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#d35400;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">ACO</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
 - **Yu et al.**: "Enhanced ant colony algorithm for discrete dynamic berth allocation," 2023. https://doi.org/10.3390/jmse11101931 <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#d35400;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">ACO</span>
 
-### A5. Memetic Algorithms
+### A4. Memetic Algorithms
 
 - **Dulebenets**: "A Diffused Memetic Optimizer for reactive berth allocation and scheduling at marine container terminals in response to disruptions," 2023. https://doi.org/10.1016/j.swevo.2023.101334 <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#7f8c8d;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Memetic</span>
 - **Xu et al.**: "Continuous berth allocation and time-variant quay crane assignment: Memetic algorithm with a heuristic decoding method," 2025. <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#7f8c8d;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Memetic</span>
 
-### A6. Multi-objective Metaheuristics
+### A5. Multi-objective Metaheuristics
 
 - **Ji et al.**: "An enhanced NSGA-II for solving berth allocation and quay crane assignment problem with stochastic arrival times," 2022. https://doi.org/10.1109/TITS.2022.3213834 <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#2980b9;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">MOEA</span> <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
 - **Hu**: "Multi-objective genetic algorithm for berth allocation problem considering daytime preference," 2015. <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#e67e22;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">GA</span> <span style="background:#2980b9;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">MOEA</span>
 - **Cheong and Tan**: "A multi-objective multi-colony ant algorithm for solving the berth allocation problem," 2008. https://link.springer.com/chapter/10.1007/978-3-540-87333-6_4 <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#d35400;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">ACO</span> <span style="background:#2980b9;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">MOEA</span>
 - **Li et al.**: "A bi-objective optimization for integrated berth allocation and quay crane assignment with preventive maintenance activities," 2020. <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#2980b9;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">MOEA</span>
 
-### A7. Hybrid Metaheuristics
+### A6. Hybrid Metaheuristics
 
 - **Correcher and Alvarez-Valdes**: "A biased random-key genetic algorithm for the time-invariant berth allocation and quay crane assignment problem," 2017. https://doi.org/10.1016/j.eswa.2017.07.028 <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#ad1457;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Hybrid</span>
 - **Chaves et al.**: "An adaptive biased random-key genetic algorithm for the tactical berth allocation problem," 2024. https://www.researchgate.net/publication/380768481_An_adaptive_biased_random-key_genetic_algorithm_for_the_tactical_berth_allocation_problem <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#ad1457;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Hybrid</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
@@ -321,6 +317,8 @@ The literature is divided into two main groups:
 - Some papers naturally belong to **multiple categories**.
 - The current grouping is built from the literature already present in your `ref.bib` and discussed in `TITS_template.tex`.
 - The same paper may appear in multiple places because this README is intended as a **taxonomy-oriented index**, not a de-duplicated bibliography.
+
+---
 
 # Robust BACAP Experiment Code
 
