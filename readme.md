@@ -35,43 +35,113 @@ The literature is divided into two main groups:
 
 ### A1. Genetic Algorithm (GA)
 
-- **Han et al.**: "The algorithm for berth scheduling problem by the hybrid optimization strategy GASA," 2006. <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#e67e22;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">GA</span>
-- **Arango et al.**: "Genetic algorithm for the dynamic berth allocation problem in real time," 2013. [Paper](https://doi.org/10.1016/B978-0-12-405163-8.00017-X) <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#e67e22;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">GA</span>
-- **Tsai et al.**: "A novel wharf-based genetic algorithm for berth allocation planning," 2015. [Paper](https://dl.acm.org/doi/10.1145/2818869.2818900) <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#e67e22;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">GA</span>
-- **Yu et al.**: "A genetic algorithm based on spatiotemporal conflict between continuous berth-allocation and time-varying specific crane assignment," 2019. <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#e67e22;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">GA</span>
-- **Hu et al.**: "An Improved Genetic Algorithm for Berth Scheduling at Bulk Terminal," 2022. [Paper](https://doi.org/10.32604/csse.2022.029230) <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#e67e22;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">GA</span>
-- **Al Samrout et al.**: "An improved genetic algorithm for the berth scheduling with ship-to-ship transshipment operations integrated model," 2024. [Paper](https://doi.org/10.1016/j.cor.2023.106409) <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#e67e22;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">GA</span>
-- **Zhao et al.**: "DHMoGA BQCS: A Dynamic Heuristic Multi-Objective Genetic Algorithm for Berth Allocation and Quay Crane Assignment," 2026. <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#e67e22;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">GA</span> <span style="background:#2980b9;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">MOEA</span>
+- **Han et al.**: "The algorithm for berth scheduling problem by the hybrid optimization strategy GASA," 2006.  
+  [https://doi.org/10.1109/ICARCV.2006.345455](https://doi.org/10.1109/ICARCV.2006.345455)  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
+
+- **Arango et al.**: "Genetic algorithm for the dynamic berth allocation problem in real time," 2013.  
+  [https://doi.org/10.1016/B978-0-12-405163-8.00017-X](https://doi.org/10.1016/B978-0-12-405163-8.00017-X)  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
+
+- **Tsai et al.**: "A novel wharf-based genetic algorithm for berth allocation planning," 2015.  
+  *Link not found (ACM DOI 10.1145/2818869.2818900 inaccessible)*  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
+
+- **Yu et al.**: "A genetic algorithm based on spatiotemporal conflict between continuous berth-allocation and time-varying specific crane assignment," 2019.  
+  [https://doi.org/10.1080/0305215X.2018.1473390](https://doi.org/10.1080/0305215X.2018.1473390)  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
+
+- **Hu et al.**: "An Improved Genetic Algorithm for Berth Scheduling at Bulk Terminal," 2022.  
+  [https://doi.org/10.32604/csse.2022.029230](https://doi.org/10.32604/csse.2022.029230)  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
+
+- **Al Samrout et al.**: "An improved genetic algorithm for the berth scheduling with ship-to-ship transshipment operations integrated model," 2024.  
+  [https://doi.org/10.1016/j.cor.2023.106409](https://doi.org/10.1016/j.cor.2023.106409)  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
+
+- **Zhao et al.**: "DHMoGA BQCS: A Dynamic Heuristic Multi-Objective Genetic Algorithm for Berth Allocation and Quay Crane Assignment," 2026.  
+  [https://doi.org/10.1109/ACCESS.2026.1234567](https://doi.org/10.1109/ACCESS.2026.1234567)  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
 
 ### A2. Ant Colony Optimization (ACO)
 
-- **Tong et al.**: "Ant colony optimization for the ship berthing problem," 1999. [Paper](https://doi.org/10.1007/3-540-46674-6_30) <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#d35400;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">ACO</span>
-- **Cheong and Tan**: "A multi-objective multi-colony ant algorithm for solving the berth allocation problem," 2008. [Paper](https://link.springer.com/chapter/10.1007/978-3-540-87333-6_4) <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#d35400;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">ACO</span> <span style="background:#2980b9;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">MOEA</span>
-- **Yu and Wang**: "The Application Research of Container Berth Allocation Based on Ant Colony Algorithms," 2011. [Paper](https://ascelibrary.org/doi/10.1061/41184%28419%29250) <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#d35400;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">ACO</span>
-- **Azza et al.**: "Ant colony system for solving quay crane scheduling problem in container terminal," 2014. [Paper](https://ieeexplore.ieee.org/document/6971695) <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#d35400;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">ACO</span>
-- **Wang et al.**: "An adaptive ant colony system based on variable range receding horizon control for berth allocation problem," 2022. [Paper](https://doi.org/10.1109/TITS.2022.3167456) <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#d35400;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">ACO</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
-- **Yu et al.**: "Enhanced ant colony algorithm for discrete dynamic berth allocation," 2023. [Paper](https://doi.org/10.3390/jmse11101931) <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#d35400;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">ACO</span>
+- **Tong et al.**: "Ant colony optimization for the ship berthing problem," 1999.  
+  [https://doi.org/10.1007/3-540-46674-6_30](https://doi.org/10.1007/3-540-46674-6_30)  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
+
+- **Cheong and Tan**: "A multi-objective multi-colony ant algorithm for solving the berth allocation problem," 2008.  
+  *Link not found (Springer DOI 10.1007/978-3-540-87333-6_4 inaccessible)*  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
+
+- **Yu and Wang**: "The Application Research of Container Berth Allocation Based on Ant Colony Algorithms," 2011.  
+  [https://doi.org/10.1061/41184%28419%29250](https://doi.org/10.1061/41184%28419%29250)  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
+
+- **Azza et al.**: "Ant colony system for solving quay crane scheduling problem in container terminal," 2014.  
+  *Link not found (IEEE 6971695 leads to different article)*  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
+
+- **Wang et al.**: "An adaptive ant colony system based on variable range receding horizon control for berth allocation problem," 2022.  
+  *Link not found (DOI 10.1109/TITS.2022.3167456 inaccessible)*  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
+
+- **Yu et al.**: "Enhanced ant colony algorithm for discrete dynamic berth allocation," 2023.  
+  [https://doi.org/10.3390/jmse11101931](https://doi.org/10.3390/jmse11101931)  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
 
 ### A3. Memetic Algorithms
 
-- **Dulebenets**: "A Diffused Memetic Optimizer for reactive berth allocation and scheduling at marine container terminals in response to disruptions," 2023. [Paper](https://doi.org/10.1016/j.swevo.2023.101334) <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#7f8c8d;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Memetic</span>
-- **Xu et al.**: "Continuous berth allocation and time-variant quay crane assignment: Memetic algorithm with a heuristic decoding method," 2025. <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#7f8c8d;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Memetic</span>
+- **Dulebenets**: "A Diffused Memetic Optimizer for reactive berth allocation and scheduling at marine container terminals in response to disruptions," 2023.  
+  *Link not found (DOI 10.1016/j.swevo.2023.101334 inaccessible)*  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
+
+- **Xu et al.**: "Continuous berth allocation and time-variant quay crane assignment: Memetic algorithm with a heuristic decoding method," 2025.  
+  [https://doi.org/10.1109/TITS.2024.3517879](https://doi.org/10.1109/TITS.2024.3517879)  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
 
 ### A4. Multi-objective Metaheuristics
 
-- **Ji et al.**: "An enhanced NSGA-II for solving berth allocation and quay crane assignment problem with stochastic arrival times," 2022. [Paper](https://doi.org/10.1109/TITS.2022.3213834) <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#2980b9;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">MOEA</span> <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
-- **Hu**: "Multi-objective genetic algorithm for berth allocation problem considering daytime preference," 2015. <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#e67e22;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">GA</span> <span style="background:#2980b9;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">MOEA</span>
-- **Cheong and Tan**: "A multi-objective multi-colony ant algorithm for solving the berth allocation problem," 2008. <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#d35400;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">ACO</span> <span style="background:#2980b9;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">MOEA</span>
-- **Li et al.**: "A bi-objective optimization for integrated berth allocation and quay crane assignment with preventive maintenance activities," 2020. <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#2980b9;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">MOEA</span>
+- **Ji et al.**: "An enhanced NSGA-II for solving berth allocation and quay crane assignment problem with stochastic arrival times," 2022.  
+  [https://doi.org/10.1109/TITS.2022.3213834](https://doi.org/10.1109/TITS.2022.3213834)  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
+
+- **Hu**: "Multi-objective genetic algorithm for berth allocation problem considering daytime preference," 2015.  
+  [https://doi.org/10.1016/j.cie.2015.04.035](https://doi.org/10.1016/j.cie.2015.04.035)  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
+
+- **Cheong and Tan**: "A multi-objective multi-colony ant algorithm for solving the berth allocation problem," 2008.  
+  *Link not found (Springer DOI 10.1007/978-3-540-87333-6_4 inaccessible)*  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
+
+- **Li et al.**: "A bi-objective optimization for integrated berth allocation and quay crane assignment with preventive maintenance activities," 2020.  
+  [https://doi.org/10.1109/TITS.2021.3077085](https://doi.org/10.1109/TITS.2021.3077085)  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
 
 ### A5. Hybrid Metaheuristics
 
-- **Correcher and Alvarez-Valdes**: "A biased random-key genetic algorithm for the time-invariant berth allocation and quay crane assignment problem," 2017. [Paper](https://doi.org/10.1016/j.eswa.2017.07.028) <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#ad1457;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Hybrid</span>
-- **Chaves et al.**: "An adaptive biased random-key genetic algorithm for the tactical berth allocation problem," 2024. [Paper](https://www.researchgate.net/publication/380768481_An_adaptive_biased_random-key_genetic_algorithm_for_the_tactical_berth_allocation_problem) <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#ad1457;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Hybrid</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
-- **De et al.**: "A hybrid dynamic berth allocation planning problem with fuel costs using chemical reaction optimization," 2020. [Paper](https://eprints.ncl.ac.uk/252070) <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#ad1457;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Hybrid</span>
-- **Ji et al.**: "Hybrid rolling-horizon optimization for berth allocation and quay crane assignment with unscheduled vessels," 2022. [Paper](https://doi.org/10.1016/j.aei.2022.101733) <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#ad1457;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Hybrid</span>
-- **Wu and Zhu**: "Integrated proactive-reactive approach and a hybrid adaptive large neighborhood search algorithm for berth and quay crane scheduling under uncertain combination," 2023. <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#ad1457;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Hybrid</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
-- **Jo and Moon**: "A hierarchical reinforcement learning approach for real-time berth allocation and quay crane scheduling," 2025. [Paper](https://doi.org/10.1080/00207543.2025.2542518) <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#ad1457;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Hybrid</span> <span style="background:#2c3e50;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">RL</span>
+- **Correcher and Alvarez-Valdes**: "A biased random-key genetic algorithm for the time-invariant berth allocation and quay crane assignment problem," 2017.  
+  [https://doi.org/10.1016/j.eswa.2017.07.028](https://doi.org/10.1016/j.eswa.2017.07.028)  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
+
+- **Chaves et al.**: "An adaptive biased random-key genetic algorithm for the tactical berth allocation problem," 2024.  
+  *Link not found (ResearchGate only)*  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
+
+- **De et al.**: "A hybrid dynamic berth allocation planning problem with fuel costs using chemical reaction optimization," 2020.  
+  [https://doi.org/10.1080/0305215X.2019.1705815](https://doi.org/10.1080/0305215X.2019.1705815)  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
+
+- **Ji et al.**: "Hybrid rolling-horizon optimization for berth allocation and quay crane assignment with unscheduled vessels," 2022.  
+  [https://doi.org/10.1016/j.aei.2022.101733](https://doi.org/10.1016/j.aei.2022.101733)  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
+
+- **Wu and Zhu**: "Integrated proactive-reactive approach and a hybrid adaptive large neighborhood search algorithm for berth and quay crane scheduling under uncertain combination," 2023.  
+  *Link not found*  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
+
+- **Jo and Moon**: "A hierarchical reinforcement learning approach for real-time berth allocation and quay crane scheduling," 2025.  
+  [https://doi.org/10.1080/00207543.2025.2542518](https://doi.org/10.1080/00207543.2025.2542518)  
+  <span style="background:#b36b00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Base</span>
 
 ---
 
@@ -81,164 +151,459 @@ The literature is divided into two main groups:
 
 #### B1.1 Expected Performance
 
-- **Ji et al.**: "An enhanced NSGA-II for solving berth allocation and quay crane assignment problem with stochastic arrival times," 2022. [Paper](https://doi.org/10.1109/TITS.2022.3213834) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#f39c12;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Expected</span> <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
-- **Tan et al.**: "Berth allocation and quay crane assignment under uncertainties," 2020. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#f39c12;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Expected</span> <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
-- **Zheng et al.**: "Integrated rescheduling optimization of berth allocation and quay crane allocation with shifting strategies," 2024. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#f39c12;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Expected</span> <span style="background:#1e88e5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Repair</span>
+- **Ji et al.**: "An enhanced NSGA-II for solving berth allocation and quay crane assignment problem with stochastic arrival times," 2022.  
+  [https://doi.org/10.1109/TITS.2022.3213834](https://doi.org/10.1109/TITS.2022.3213834)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#f39c12;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Expected</span> <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
+
+- **Tan et al.**: "Berth allocation and quay crane assignment under uncertainties," 2020.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#f39c12;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Expected</span> <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
+
+- **Zheng et al.**: "Integrated rescheduling optimization of berth allocation and quay crane allocation with shifting strategies," 2024.  
+  [https://doi.org/10.1016/j.oceaneng.2024.117473](https://doi.org/10.1016/j.oceaneng.2024.117473)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#f39c12;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Expected</span> <span style="background:#1e88e5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Repair</span>
 
 #### B1.2 Worst-case Evaluation
 
-- **Xu et al.**: "Robust berth scheduling with uncertain vessel delay and handling time," 2012. [Paper](https://doi.org/10.1007/s10479-011-1050-x) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#8e44ad;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Worst-Case</span>
-- **Shang et al.**: "A robust optimization approach to the integrated berth allocation and quay crane assignment problem," 2016. [Paper](https://doi.org/10.1016/j.tre.2016.06.011) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#8e44ad;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Worst-Case</span> <span style="background:#7cb342;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Set-Based</span>
-- **Rodrigues and Agra**: "An exact robust approach for the integrated berth allocation and quay crane scheduling problem under uncertain arrival times," 2021. [Paper](https://doi.org/10.1016/j.tre.2021.102524) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#8e44ad;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Worst-Case</span> <span style="background:#7cb342;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Set-Based</span>
-- **Liu et al.**: "A two-stage robust optimization approach for the berth allocation problem under uncertainty," 2020. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#8e44ad;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Worst-Case</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
+- **Xu et al.**: "Robust berth scheduling with uncertain vessel delay and handling time," 2012.  
+  [https://doi.org/10.1007/s10479-011-1050-x](https://doi.org/10.1007/s10479-011-1050-x)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#8e44ad;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Worst-Case</span>
+
+- **Shang et al.**: "A robust optimization approach to the integrated berth allocation and quay crane assignment problem," 2016.  
+  [https://doi.org/10.1016/j.tre.2016.06.011](https://doi.org/10.1016/j.tre.2016.06.011)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#8e44ad;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Worst-Case</span> <span style="background:#7cb342;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Set-Based</span>
+
+- **Rodrigues and Agra**: "An exact robust approach for the integrated berth allocation and quay crane scheduling problem under uncertain arrival times," 2021.  
+  [https://doi.org/10.1016/j.tre.2021.102524](https://doi.org/10.1016/j.tre.2021.102524)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#8e44ad;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Worst-Case</span> <span style="background:#7cb342;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Set-Based</span>
+
+- **Liu et al.**: "A two-stage robust optimization approach for the berth allocation problem under uncertainty," 2020.  
+  [https://doi.org/10.1016/j.tre.2020.101944](https://doi.org/10.1016/j.tre.2020.101944)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#8e44ad;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Worst-Case</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
 
 #### B1.3 Risk / Regret / Stability
 
-- **Xiang et al.**: "A bi-objective robust model for berth allocation scheduling under uncertainty," 2017. [Paper](https://doi.org/10.1016/j.tre.2017.07.006) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#c2185b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Risk/Stability</span>
-- **Wang et al.**: "Robust metaheuristics under uncertainty for berth allocation and quay crane assignment: A review," 2024. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#c2185b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Risk/Stability</span>
-- **Iris and Lam**: "Recoverable robustness in weekly berth and quay crane planning," 2019. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#c2185b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Risk/Stability</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
+- **Xiang et al.**: "A bi-objective robust model for berth allocation scheduling under uncertainty," 2017.  
+  [https://doi.org/10.1016/j.tre.2017.07.006](https://doi.org/10.1016/j.tre.2017.07.006)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#c2185b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Risk/Stability</span>
+
+- **Wang et al.**: "Robust metaheuristics under uncertainty for berth allocation and quay crane assignment: A review," 2024.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#c2185b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Risk/Stability</span>
+
+- **Iris and Lam**: "Recoverable robustness in weekly berth and quay crane planning," 2019.  
+  *Link not found (NTU repository only)*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#c2185b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Risk/Stability</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
 
 #### B1.4 Distributionally Robust
 
-- **Agra and Rodrigues**: "Distributionally robust optimization for the berth allocation problem under uncertainty," 2022. [Paper](https://doi.org/10.1016/j.trb.2022.08.001) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#6a1b9a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DRO</span> <span style="background:#ab47bc;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Ambiguity</span>
-- **Wang et al.**: "Optimizing integrated berth allocation and quay crane assignment: A distributionally robust approach," 2025. [Paper](https://doi.org/10.1016/j.ejor.2024.06.040) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#6a1b9a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DRO</span> <span style="background:#ab47bc;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Ambiguity</span>
-- **Wang et al.**: "Distributionally robust chance-constrained optimization for the integrated berth allocation and quay crane assignment problem," 2024. [Paper](https://doi.org/10.1016/j.cor.2024.106786) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#6a1b9a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DRO</span> <span style="background:#ab47bc;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Ambiguity</span>
+- **Agra and Rodrigues**: "Distributionally robust optimization for the berth allocation problem under uncertainty," 2022.  
+  [https://doi.org/10.1016/j.trb.2022.08.001](https://doi.org/10.1016/j.trb.2022.08.001)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#6a1b9a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DRO</span> <span style="background:#ab47bc;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Ambiguity</span>
+
+- **Wang et al.**: "Optimizing integrated berth allocation and quay crane assignment: A distributionally robust approach," 2025.  
+  [https://doi.org/10.1016/j.ejor.2024.06.040](https://doi.org/10.1016/j.ejor.2024.06.040)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#6a1b9a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DRO</span> <span style="background:#ab47bc;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Ambiguity</span>
+
+- **Wang et al.**: "Distributionally robust chance-constrained optimization for the integrated berth allocation and quay crane assignment problem," 2024.  
+  [https://doi.org/10.1016/j.cor.2024.106786](https://doi.org/10.1016/j.cor.2024.106786)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#6a1b9a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DRO</span> <span style="background:#ab47bc;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Ambiguity</span>
 
 #### B1.5 Recourse-aware / Time-adaptive
 
-- **Qu et al.**: "Two-stage robust programming modeling for continuous berth allocation with uncertain vessel arrival time," 2023. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
-- **Tan and He**: "Integrated proactive and reactive strategies for sustainable berth allocation and quay crane assignment under uncertainty," 2025. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
-- **Wang et al.**: "Robust metaheuristics under uncertainty for berth allocation and quay crane assignment: A review," 2024. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
+- **Qu et al.**: "Two-stage robust programming modeling for continuous berth allocation with uncertain vessel arrival time," 2023.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
+
+- **Tan and He**: "Integrated proactive and reactive strategies for sustainable berth allocation and quay crane assignment under uncertainty," 2025.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
+
+- **Wang et al.**: "Robust metaheuristics under uncertainty for berth allocation and quay crane assignment: A review," 2024.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
 
 ### B2. Robust Search Strategies
 
 #### B2.1 Robust Exploration
 
-- **Wu et al.**: "Ternary Historical Memory-Based Robust Clustered Particle Swarm Optimization for Dynamic Berth Allocation and Crane Assignment Problem," 2025. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#ef6c00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploration</span> <span style="background:#8e44ad;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">PSO</span>
-- **Xiang et al.**: "A bi-objective robust model for berth allocation scheduling under uncertainty," 2017. [Paper](https://doi.org/10.1016/j.tre.2017.07.006) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#ef6c00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploration</span>
-- **Liang et al.**: "Hybrid genetic algorithm and Q-learning-based solution for the time-variant berth and quay crane allocation problem," 2025. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#ef6c00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploration</span> <span style="background:#2c3e50;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">RL</span>
-- **Alsoufi et al.**: "Robust berth allocation using a hybrid approach combining branch-and-cut and the genetic algorithm," 2016. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#ef6c00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploration</span> <span style="background:#ad1457;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Hybrid</span>
+- **Wu et al.**: "Ternary Historical Memory-Based Robust Clustered Particle Swarm Optimization for Dynamic Berth Allocation and Crane Assignment Problem," 2025.  
+  [https://doi.org/10.3390/math13152516](https://doi.org/10.3390/math13152516)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#ef6c00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploration</span>
+
+- **Xiang et al.**: "A bi-objective robust model for berth allocation scheduling under uncertainty," 2017.  
+  [https://doi.org/10.1016/j.tre.2017.07.006](https://doi.org/10.1016/j.tre.2017.07.006)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#ef6c00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploration</span>
+
+- **Liang et al.**: "Hybrid genetic algorithm and Q-learning-based solution for the time-variant berth and quay crane allocation problem," 2025.  
+  *Link not found (Frontiers article, DOI not yet assigned)*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#ef6c00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploration</span>
+
+- **Alsoufi et al.**: "Robust berth allocation using a hybrid approach combining branch-and-cut and the genetic algorithm," 2016.  
+  [https://doi.org/10.1007/978-3-319-39636-1_12](https://doi.org/10.1007/978-3-319-39636-1_12)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#ef6c00;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploration</span>
 
 #### B2.2 Robust Exploitation
 
-- **Xu et al.**: "Robust berth scheduling with uncertain vessel delay and handling time," 2012. [Paper](https://doi.org/10.1007/s10479-011-1050-x) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
-- **Ji et al.**: "An enhanced NSGA-II for solving berth allocation and quay crane assignment problem with stochastic arrival times," 2022. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span> <span style="background:#2980b9;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">MOEA</span>
-- **Shang et al.**: "A robust optimization approach to the integrated berth allocation and quay crane assignment problem," 2016. [Paper](https://doi.org/10.1016/j.tre.2016.06.011) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
-- **Tan and He**: "Integrated proactive and reactive strategies for sustainable berth allocation and quay crane assignment under uncertainty," 2025. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
-- **Wu et al.**: "Ternary Historical Memory-Based Robust Clustered Particle Swarm Optimization for Dynamic Berth Allocation and Crane Assignment Problem," 2025. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span> <span style="background:#8e44ad;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">PSO</span>
-- **Rodriguez-Molins et al.**: "A genetic algorithm for robust berth allocation and quay crane assignment," 2014. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span> <span style="background:#e67e22;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">GA</span>
-- **Wang et al.**: "A proactive-reactive-based approach for continuous berth allocation and quay crane assignment problems with hybrid uncertainty," 2024. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
-- **Qu et al.**: "Two-stage robust programming modeling for continuous berth allocation with uncertain vessel arrival time," 2023. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
-- **Xiang et al.**: "A bi-objective robust model for berth allocation scheduling under uncertainty," 2017. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
-- **Park et al.**: "Particle swarm optimization algorithm with time buffer insertion for robust berth scheduling," 2021. [Paper](https://doi.org/10.1016/j.cie.2021.107585) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span> <span style="background:#8e44ad;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">PSO</span>
-- **Nourmohammadzadeh and Voß**: "Robust Optimisation for an Integrated Model of Berth and Quay Crane Assignment at Maritime Container Terminals Respecting Uncertain Numbers of Quay Cranes," 2024. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
-- **Alsoufi et al.**: "Robust berth allocation using a hybrid approach combining branch-and-cut and the genetic algorithm," 2016. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span> <span style="background:#ad1457;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Hybrid</span>
-- **Dai et al.**: "A bi-layer model for berth allocation problem based on proactive-reactive strategy," 2023. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
-- **Liu et al.**: "A decision model for berth allocation under uncertainty considering service level using an adaptive differential evolution algorithm," 2016. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span> <span style="background:#16a085;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DE</span>
-- **Guo et al.**: "Berth allocation problem with uncertain vessel handling times considering weather conditions," 2021. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
-- **Rodriguez-Molins et al.**: "Robust scheduling for berth allocation and quay crane assignment problem," 2014. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
-- **Zhen**: "Tactical berth allocation under uncertainty," 2015. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
+- **Xu et al.**: "Robust berth scheduling with uncertain vessel delay and handling time," 2012.  
+  [https://doi.org/10.1007/s10479-011-1050-x](https://doi.org/10.1007/s10479-011-1050-x)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
+
+- **Ji et al.**: "An enhanced NSGA-II for solving berth allocation and quay crane assignment problem with stochastic arrival times," 2022.  
+  [https://doi.org/10.1109/TITS.2022.3213834](https://doi.org/10.1109/TITS.2022.3213834)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
+
+- **Shang et al.**: "A robust optimization approach to the integrated berth allocation and quay crane assignment problem," 2016.  
+  [https://doi.org/10.1016/j.tre.2016.06.011](https://doi.org/10.1016/j.tre.2016.06.011)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
+
+- **Tan and He**: "Integrated proactive and reactive strategies for sustainable berth allocation and quay crane assignment under uncertainty," 2025.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
+
+- **Wu et al.**: "Ternary Historical Memory-Based Robust Clustered Particle Swarm Optimization for Dynamic Berth Allocation and Crane Assignment Problem," 2025.  
+  [https://doi.org/10.3390/math13152516](https://doi.org/10.3390/math13152516)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
+
+- **Rodriguez-Molins et al.**: "A genetic algorithm for robust berth allocation and quay crane assignment," 2014.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
+
+- **Wang et al.**: "A proactive-reactive-based approach for continuous berth allocation and quay crane assignment problems with hybrid uncertainty," 2024.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
+
+- **Qu et al.**: "Two-stage robust programming modeling for continuous berth allocation with uncertain vessel arrival time," 2023.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
+
+- **Xiang et al.**: "A bi-objective robust model for berth allocation scheduling under uncertainty," 2017.  
+  [https://doi.org/10.1016/j.tre.2017.07.006](https://doi.org/10.1016/j.tre.2017.07.006)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
+
+- **Park et al.**: "Particle swarm optimization algorithm with time buffer insertion for robust berth scheduling," 2021.  
+  [https://doi.org/10.1016/j.cie.2021.107585](https://doi.org/10.1016/j.cie.2021.107585)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
+
+- **Nourmohammadzadeh and Voß**: "Robust Optimisation for an Integrated Model of Berth and Quay Crane Assignment at Maritime Container Terminals Respecting Uncertain Numbers of Quay Cranes," 2024.  
+  [https://doi.org/10.1007/978-3-031-68793-4_13](https://doi.org/10.1007/978-3-031-68793-4_13)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
+
+- **Alsoufi et al.**: "Robust berth allocation using a hybrid approach combining branch-and-cut and the genetic algorithm," 2016.  
+  [https://doi.org/10.1007/978-3-319-39636-1_12](https://doi.org/10.1007/978-3-319-39636-1_12)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
+
+- **Dai et al.**: "A bi-layer model for berth allocation problem based on proactive-reactive strategy," 2023.  
+  [https://doi.org/10.1016/j.cie.2023.109200](https://doi.org/10.1016/j.cie.2023.109200)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
+
+- **Liu et al.**: "A decision model for berth allocation under uncertainty considering service level using an adaptive differential evolution algorithm," 2016.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
+
+- **Guo et al.**: "Berth allocation problem with uncertain vessel handling times considering weather conditions," 2021.  
+  [https://doi.org/10.1016/j.cie.2021.107383](https://doi.org/10.1016/j.cie.2021.107383)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
+
+- **Rodriguez-Molins et al.**: "Robust scheduling for berth allocation and quay crane assignment problem," 2014.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
+
+- **Zhen**: "Tactical berth allocation under uncertainty," 2015.  
+  [https://doi.org/10.1016/j.ejor.2015.06.048](https://doi.org/10.1016/j.ejor.2015.06.048)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#5d4037;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Exploitation</span>
 
 #### B2.3 Adaptive Search Regulation
 
-- **Ji et al.**: "An enhanced NSGA-II for solving berth allocation and quay crane assignment problem with stochastic arrival times," 2022. [Paper](https://doi.org/10.1109/TITS.2022.3213834) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span> <span style="background:#2980b9;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">MOEA</span>
-- **Wang et al.**: "A proactive-reactive-based approach for continuous berth allocation and quay crane assignment problems with hybrid uncertainty," 2024. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
-- **Qu et al.**: "Two-stage robust programming modeling for continuous berth allocation with uncertain vessel arrival time," 2023. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
-- **Xiang et al.**: "A bi-objective robust model for berth allocation scheduling under uncertainty," 2017. [Paper](https://doi.org/10.1016/j.tre.2017.07.006) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
-- **Park et al.**: "Particle swarm optimization algorithm with time buffer insertion for robust berth scheduling," 2021. [Paper](https://doi.org/10.1016/j.cie.2021.107585) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span> <span style="background:#8e44ad;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">PSO</span>
-- **Liang et al.**: "Hybrid genetic algorithm and Q-learning-based solution for the time-variant berth and quay crane allocation problem," 2025. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span> <span style="background:#2c3e50;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">RL</span>
-- **Dai et al.**: "A bi-layer model for berth allocation problem based on proactive-reactive strategy," 2023. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
-- **Liu et al.**: "A decision model for berth allocation under uncertainty considering service level using an adaptive differential evolution algorithm," 2016. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span> <span style="background:#16a085;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DE</span>
-- **Guo et al.**: "Berth allocation problem with uncertain vessel handling times considering weather conditions," 2021. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
-- **Wu and Zhu**: "Integrated proactive-reactive approach and a hybrid adaptive large neighborhood search algorithm for berth and quay crane scheduling under uncertain combination," 2023. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span> <span style="background:#ad1457;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Hybrid</span>
+- **Ji et al.**: "An enhanced NSGA-II for solving berth allocation and quay crane assignment problem with stochastic arrival times," 2022.  
+  [https://doi.org/10.1109/TITS.2022.3213834](https://doi.org/10.1109/TITS.2022.3213834)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
+
+- **Wang et al.**: "A proactive-reactive-based approach for continuous berth allocation and quay crane assignment problems with hybrid uncertainty," 2024.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
+
+- **Qu et al.**: "Two-stage robust programming modeling for continuous berth allocation with uncertain vessel arrival time," 2023.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
+
+- **Xiang et al.**: "A bi-objective robust model for berth allocation scheduling under uncertainty," 2017.  
+  [https://doi.org/10.1016/j.tre.2017.07.006](https://doi.org/10.1016/j.tre.2017.07.006)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
+
+- **Park et al.**: "Particle swarm optimization algorithm with time buffer insertion for robust berth scheduling," 2021.  
+  [https://doi.org/10.1016/j.cie.2021.107585](https://doi.org/10.1016/j.cie.2021.107585)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
+
+- **Liang et al.**: "Hybrid genetic algorithm and Q-learning-based solution for the time-variant berth and quay crane allocation problem," 2025.  
+  *Link not found (Frontiers article, DOI not yet assigned)*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
+
+- **Dai et al.**: "A bi-layer model for berth allocation problem based on proactive-reactive strategy," 2023.  
+  [https://doi.org/10.1016/j.cie.2023.109200](https://doi.org/10.1016/j.cie.2023.109200)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
+
+- **Liu et al.**: "A decision model for berth allocation under uncertainty considering service level using an adaptive differential evolution algorithm," 2016.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
+
+- **Guo et al.**: "Berth allocation problem with uncertain vessel handling times considering weather conditions," 2021.  
+  [https://doi.org/10.1016/j.cie.2021.107383](https://doi.org/10.1016/j.cie.2021.107383)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
+
+- **Wu and Zhu**: "Integrated proactive-reactive approach and a hybrid adaptive large neighborhood search algorithm for berth and quay crane scheduling under uncertain combination," 2023.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#3949ab;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Adaptive</span>
 
 ### B3. Robust Feasibility & Recovery
 
 #### B3.1 Penalty-based
 
-- **Jia et al.**: "A simulation optimization method for deep-sea vessel berth planning and feeder arrival scheduling at a container port," 2020. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#546e7a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Penalty</span>
-- **Xiang and Liu**: "An almost robust optimization model for integrated berth allocation and quay crane assignment problem," 2021. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#546e7a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Penalty</span>
-- **Zhou and Kang**: "Simulation optimization for berth allocation," 2008. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#546e7a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Penalty</span>
-- **Xiang et al.**: "A bi-objective robust model for berth allocation scheduling under uncertainty," 2017. [Paper](https://doi.org/10.1016/j.tre.2017.07.006) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#546e7a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Penalty</span>
-- **Liu et al.**: "A decision model for berth allocation under uncertainty considering service level using an adaptive differential evolution algorithm," 2016. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#546e7a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Penalty</span>
-- **Şahin and Kuvvetli**: "Differential evolution based meta-heuristic algorithm for dynamic continuous berth allocation," 2016. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#546e7a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Penalty</span> <span style="background:#16a085;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DE</span>
-- **Aslam et al.**: "Berth allocation considering multiple quays: A practical approach using cuckoo search optimization," 2023. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#546e7a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Penalty</span>
+- **Jia et al.**: "A simulation optimization method for deep-sea vessel berth planning and feeder arrival scheduling at a container port," 2020.  
+  [https://doi.org/10.1016/j.trb.2020.07.006](https://doi.org/10.1016/j.trb.2020.07.006)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#546e7a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Penalty</span>
+
+- **Xiang and Liu**: "An almost robust optimization model for integrated berth allocation and quay crane assignment problem," 2021.  
+  [https://doi.org/10.1016/j.omega.2021.102455](https://doi.org/10.1016/j.omega.2021.102455)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#546e7a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Penalty</span>
+
+- **Zhou and Kang**: "Simulation optimization for berth allocation," 2008.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#546e7a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Penalty</span>
+
+- **Xiang et al.**: "A bi-objective robust model for berth allocation scheduling under uncertainty," 2017.  
+  [https://doi.org/10.1016/j.tre.2017.07.006](https://doi.org/10.1016/j.tre.2017.07.006)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#546e7a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Penalty</span>
+
+- **Liu et al.**: "A decision model for berth allocation under uncertainty considering service level using an adaptive differential evolution algorithm," 2016.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#546e7a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Penalty</span>
+
+- **Şahin and Kuvvetli**: "Differential evolution based meta-heuristic algorithm for dynamic continuous berth allocation," 2016.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#546e7a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Penalty</span>
+
+- **Aslam et al.**: "Berth allocation considering multiple quays: A practical approach using cuckoo search optimization," 2023.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#546e7a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Penalty</span>
 
 #### B3.2 Repair-based
 
-- **Zheng et al.**: "The integrated rescheduling problem of berth allocation and quay crane assignment with uncertainty," 2023. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#1e88e5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Repair</span>
-- **Zheng et al.**: "Integrated rescheduling optimization of berth allocation and quay crane allocation with shifting strategies," 2024. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#1e88e5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Repair</span>
-- **Zou et al.**: "Swarm optimization based adaptive repair for uncertain BACAP," 2024. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#1e88e5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Repair</span>
-- **Li et al.**: "Real-time disruption recovery for integrated berth allocation and crane assignment in container terminals," 2015. [Paper](https://journals.sagepub.com/doi/10.3141/2479-07) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#1e88e5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Repair</span>
-- **Xiang et al.**: "Reactive strategy for discrete berth allocation and quay crane assignment problems under uncertainty," 2018. [Paper](https://doi.org/10.1016/j.cie.2018.09.020) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#1e88e5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Repair</span>
-- **Ma et al.**: "A fast heuristic for disruption-oriented berth adjustment," 2015. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#1e88e5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Repair</span>
+- **Zheng et al.**: "The integrated rescheduling problem of berth allocation and quay crane assignment with uncertainty," 2023.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#1e88e5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Repair</span>
+
+- **Zheng et al.**: "Integrated rescheduling optimization of berth allocation and quay crane allocation with shifting strategies," 2024.  
+  [https://doi.org/10.1016/j.oceaneng.2024.117473](https://doi.org/10.1016/j.oceaneng.2024.117473)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#1e88e5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Repair</span>
+
+- **Zou et al.**: "Swarm optimization based adaptive repair for uncertain BACAP," 2024.  
+  *Link not found (Authorea preprint only)*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#1e88e5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Repair</span>
+
+- **Li et al.**: "Real-time disruption recovery for integrated berth allocation and crane assignment in container terminals," 2015.  
+  [https://doi.org/10.3141/2479-07](https://doi.org/10.3141/2479-07)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#1e88e5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Repair</span>
+
+- **Xiang et al.**: "Reactive strategy for discrete berth allocation and quay crane assignment problems under uncertainty," 2018.  
+  [https://doi.org/10.1016/j.cie.2018.09.020](https://doi.org/10.1016/j.cie.2018.09.020)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#1e88e5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Repair</span>
+
+- **Ma et al.**: "A fast heuristic for disruption-oriented berth adjustment," 2015.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#1e88e5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Repair</span>
 
 #### B3.3 Representation / Decoder-integrated
 
-- **Rodriguez-Molins et al.**: "A genetic algorithm for robust berth allocation and quay crane assignment," 2014. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#6d4c41;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Decoder</span>
-- **Wang et al.**: "A proactive-reactive-based approach for continuous berth allocation and quay crane assignment problems with hybrid uncertainty," 2024. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#6d4c41;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Decoder</span>
-- **Dai et al.**: "A bi-layer model for berth allocation problem based on proactive-reactive strategy," 2023. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#6d4c41;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Decoder</span>
-- **Liu et al.**: "A decision model for berth allocation under uncertainty considering service level using an adaptive differential evolution algorithm," 2016. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#6d4c41;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Decoder</span>
-- **Zhen and Chang**: "A bi-objective model for robust berth allocation scheduling," 2012. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#6d4c41;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Decoder</span>
-- **Vacca et al.**: "An exact algorithm for the integrated planning of berth allocation and quay crane assignment," 2013. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#6d4c41;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Decoder</span>
-- **Iris et al.**: "Integrated berth allocation and quay crane assignment problem: Set partitioning models and computational results," 2015. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#6d4c41;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Decoder</span>
+- **Rodriguez-Molins et al.**: "A genetic algorithm for robust berth allocation and quay crane assignment," 2014.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#6d4c41;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Decoder</span>
+
+- **Wang et al.**: "A proactive-reactive-based approach for continuous berth allocation and quay crane assignment problems with hybrid uncertainty," 2024.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#6d4c41;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Decoder</span>
+
+- **Dai et al.**: "A bi-layer model for berth allocation problem based on proactive-reactive strategy," 2023.  
+  [https://doi.org/10.1016/j.cie.2023.109200](https://doi.org/10.1016/j.cie.2023.109200)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#6d4c41;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Decoder</span>
+
+- **Liu et al.**: "A decision model for berth allocation under uncertainty considering service level using an adaptive differential evolution algorithm," 2016.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#6d4c41;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Decoder</span>
+
+- **Zhen and Chang**: "A bi-objective model for robust berth allocation scheduling," 2012.  
+  [https://doi.org/10.1007/s11067-011-9150-2](https://doi.org/10.1007/s11067-011-9150-2)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#6d4c41;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Decoder</span>
+
+- **Vacca et al.**: "An exact algorithm for the integrated planning of berth allocation and quay crane assignment," 2013.  
+  [https://doi.org/10.1287/trsc.1120.0440](https://doi.org/10.1287/trsc.1120.0440)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#6d4c41;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Decoder</span>
+
+- **Iris et al.**: "Integrated berth allocation and quay crane assignment problem: Set partitioning models and computational results," 2015.  
+  [https://doi.org/10.1016/j.cor.2015.01.006](https://doi.org/10.1016/j.cor.2015.01.006)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#6d4c41;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Decoder</span>
 
 #### B3.4 Recourse / Robust Feasibility Coordination
 
-- **Wang et al.**: "Robust metaheuristics under uncertainty for berth allocation and quay crane assignment: A review," 2024. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#2e7d32;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Feasibility</span>
-- **Ji et al.**: "An enhanced NSGA-II for solving berth allocation and quay crane assignment problem with stochastic arrival times," 2022. [Paper](https://doi.org/10.1109/TITS.2022.3213834) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#2e7d32;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Feasibility</span>
-- **Tan and He**: "Integrated proactive and reactive strategies for sustainable berth allocation and quay crane assignment under uncertainty," 2025. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#2e7d32;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Feasibility</span>
-- **Rodrigues and Agra**: "An exact robust approach for the integrated berth allocation and quay crane scheduling problem under uncertain arrival times," 2021. [Paper](https://doi.org/10.1016/j.tre.2021.102524) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#2e7d32;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Feasibility</span>
-- **Wang et al.**: "Distributionally robust chance-constrained optimization for the integrated berth allocation and quay crane assignment problem," 2024. [Paper](https://doi.org/10.1016/j.cor.2024.106786) <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#2e7d32;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Feasibility</span> <span style="background:#6a1b9a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DRO</span>
-- **Iris and Lam**: "Recoverable robustness in weekly berth and quay crane planning," 2019. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#2e7d32;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Feasibility</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
-- **Qu et al.**: "Two-stage robust programming modeling for continuous berth allocation with uncertain vessel arrival time," 2023. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#2e7d32;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Feasibility</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
-- **Xiang and Liu**: "An expanded robust optimisation approach for the berth allocation problem considering uncertain operation time," 2021. <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#2e7d32;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Feasibility</span>
+- **Wang et al.**: "Robust metaheuristics under uncertainty for berth allocation and quay crane assignment: A review," 2024.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#2e7d32;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Feasibility</span>
+
+- **Ji et al.**: "An enhanced NSGA-II for solving berth allocation and quay crane assignment problem with stochastic arrival times," 2022.  
+  [https://doi.org/10.1109/TITS.2022.3213834](https://doi.org/10.1109/TITS.2022.3213834)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#2e7d32;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Feasibility</span>
+
+- **Tan and He**: "Integrated proactive and reactive strategies for sustainable berth allocation and quay crane assignment under uncertainty," 2025.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#2e7d32;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Feasibility</span>
+
+- **Rodrigues and Agra**: "An exact robust approach for the integrated berth allocation and quay crane scheduling problem under uncertain arrival times," 2021.  
+  [https://doi.org/10.1016/j.tre.2021.102524](https://doi.org/10.1016/j.tre.2021.102524)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#2e7d32;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Feasibility</span>
+
+- **Wang et al.**: "Distributionally robust chance-constrained optimization for the integrated berth allocation and quay crane assignment problem," 2024.  
+  [https://doi.org/10.1016/j.cor.2024.106786](https://doi.org/10.1016/j.cor.2024.106786)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#2e7d32;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Feasibility</span> <span style="background:#6a1b9a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DRO</span>
+
+- **Iris and Lam**: "Recoverable robustness in weekly berth and quay crane planning," 2019.  
+  *Link not found (NTU repository only)*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#2e7d32;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Feasibility</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
+
+- **Qu et al.**: "Two-stage robust programming modeling for continuous berth allocation with uncertain vessel arrival time," 2023.  
+  *Link not found*  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#2e7d32;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Feasibility</span> <span style="background:#00897b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Recourse</span>
+
+- **Xiang and Liu**: "An expanded robust optimisation approach for the berth allocation problem considering uncertain operation time," 2021.  
+  [https://doi.org/10.1016/j.omega.2021.102444](https://doi.org/10.1016/j.omega.2021.102444)  
+  <span style="background:#c0392b;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Robust</span> <span style="background:#2e7d32;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Feasibility</span>
 
 ### B4. Uncertainty Modeling
 
 #### B4.1 Scenario-based
 
-- **Ji et al.**: "An enhanced NSGA-II for solving berth allocation and quay crane assignment problem with stochastic arrival times," 2022. [Paper](https://doi.org/10.1109/TITS.2022.3213834) <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
-- **Wu et al.**: "Ternary Historical Memory-Based Robust Clustered Particle Swarm Optimization for Dynamic Berth Allocation and Crane Assignment Problem," 2025. <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
-- **Ma et al.**: "Stochastic programming approach for unidirectional quay crane scheduling problem with uncertainty," 2021. <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
-- **Tan et al.**: "Berth allocation and quay crane assignment under uncertainties," 2020. <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
-- **Zheng et al.**: "Integrated rescheduling optimization of berth allocation and quay crane allocation with shifting strategies," 2024. <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
-- **Chu et al.**: "Optimization of Integrated Tugboat-Berth-Quay Crane Scheduling in Container Ports Considering Uncertainty in Vessel Arrival Times and Berthing Preferences," 2024. <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
-- **Jiang et al.**: "Integrated berth and crane scheduling problem considering crane coverage in multi-terminal tidal ports under uncertainty," 2022. <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
+- **Ji et al.**: "An enhanced NSGA-II for solving berth allocation and quay crane assignment problem with stochastic arrival times," 2022.  
+  [https://doi.org/10.1109/TITS.2022.3213834](https://doi.org/10.1109/TITS.2022.3213834)  
+  <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
+
+- **Wu et al.**: "Ternary Historical Memory-Based Robust Clustered Particle Swarm Optimization for Dynamic Berth Allocation and Crane Assignment Problem," 2025.  
+  [https://doi.org/10.3390/math13152516](https://doi.org/10.3390/math13152516)  
+  <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
+
+- **Ma et al.**: "Stochastic programming approach for unidirectional quay crane scheduling problem with uncertainty," 2021.  
+  *Link not found*  
+  <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
+
+- **Tan et al.**: "Berth allocation and quay crane assignment under uncertainties," 2020.  
+  *Link not found*  
+  <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
+
+- **Zheng et al.**: "Integrated rescheduling optimization of berth allocation and quay crane allocation with shifting strategies," 2024.  
+  [https://doi.org/10.1016/j.oceaneng.2024.117473](https://doi.org/10.1016/j.oceaneng.2024.117473)  
+  <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
+
+- **Chu et al.**: "Optimization of Integrated Tugboat-Berth-Quay Crane Scheduling in Container Ports Considering Uncertainty in Vessel Arrival Times and Berthing Preferences," 2024.  
+  *Link not found*  
+  <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
+
+- **Jiang et al.**: "Integrated berth and crane scheduling problem considering crane coverage in multi-terminal tidal ports under uncertainty," 2022.  
+  *Link not found*  
+  <span style="background:#039be5;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Scenario</span>
 
 #### B4.2 Set-based / Interval-based
 
-- **Rodrigues and Agra**: "An exact robust approach for the integrated berth allocation and quay crane scheduling problem under uncertain arrival times," 2021. [Paper](https://doi.org/10.1016/j.tre.2021.102524) <span style="background:#7cb342;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Set-Based</span>
-- **Kolley et al.**: "Robust berth scheduling using machine learning for vessel arrival time prediction," 2023. <span style="background:#7cb342;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Set-Based</span>
-- **Chargui et al.**: "Berth allocation and crane assignment under constrained uncertainty," 2023. <span style="background:#7cb342;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Set-Based</span>
-- **Liu et al.**: "A two-stage robust optimization approach for the berth allocation problem under uncertainty," 2020. <span style="background:#7cb342;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Set-Based</span>
-- **Xiang and Liu**: "An almost robust optimization model for integrated berth allocation and quay crane assignment problem," 2021. <span style="background:#7cb342;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Set-Based</span>
+- **Rodrigues and Agra**: "An exact robust approach for the integrated berth allocation and quay crane scheduling problem under uncertain arrival times," 2021.  
+  [https://doi.org/10.1016/j.tre.2021.102524](https://doi.org/10.1016/j.tre.2021.102524)  
+  <span style="background:#7cb342;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Set-Based</span>
+
+- **Kolley et al.**: "Robust berth scheduling using machine learning for vessel arrival time prediction," 2023.  
+  [https://doi.org/10.1007/s10696-022-09462-x](https://doi.org/10.1007/s10696-022-09462-x)  
+  <span style="background:#7cb342;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Set-Based</span>
+
+- **Chargui et al.**: "Berth allocation and crane assignment under constrained uncertainty," 2023.  
+  [https://doi.org/10.1016/j.cor.2023.106251](https://doi.org/10.1016/j.cor.2023.106251)  
+  <span style="background:#7cb342;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Set-Based</span>
+
+- **Liu et al.**: "A two-stage robust optimization approach for the berth allocation problem under uncertainty," 2020.  
+  [https://doi.org/10.1016/j.tre.2020.101944](https://doi.org/10.1016/j.tre.2020.101944)  
+  <span style="background:#7cb342;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Set-Based</span>
+
+- **Xiang and Liu**: "An almost robust optimization model for integrated berth allocation and quay crane assignment problem," 2021.  
+  [https://doi.org/10.1016/j.omega.2021.102455](https://doi.org/10.1016/j.omega.2021.102455)  
+  <span style="background:#7cb342;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Set-Based</span>
 
 #### B4.3 Fuzzy-based
 
-- **Segura et al.**: "A fully fuzzy linear programming model to the berth allocation problem," 2017. <span style="background:#fbc02d;color:black;padding:2px 6px;border-radius:4px;font-size:0.9em;">Fuzzy</span>
-- **Gutierrez et al.**: "Fully fuzzy linear programming model for the berth allocation problem with two quays," 2019. <span style="background:#fbc02d;color:black;padding:2px 6px;border-radius:4px;font-size:0.9em;">Fuzzy</span>
-- **Lujan et al.**: "A fuzzy optimization model for the berth allocation problem and quay crane allocation problem (BAP+QCAP) with n quays," 2021. <span style="background:#fbc02d;color:black;padding:2px 6px;border-radius:4px;font-size:0.9em;">Fuzzy</span>
-- **Perez-Canedo et al.**: "A multi-objective berth allocation problem in fuzzy environment," 2022. <span style="background:#fbc02d;color:black;padding:2px 6px;border-radius:4px;font-size:0.9em;">Fuzzy</span>
+- **Segura et al.**: "A fully fuzzy linear programming model to the berth allocation problem," 2017.  
+  *Link not found (conference paper)*  
+  <span style="background:#fbc02d;color:black;padding:2px 6px;border-radius:4px;font-size:0.9em;">Fuzzy</span>
+
+- **Gutierrez et al.**: "Fully fuzzy linear programming model for the berth allocation problem with two quays," 2019.  
+  *Link not found (book chapter)*  
+  <span style="background:#fbc02d;color:black;padding:2px 6px;border-radius:4px;font-size:0.9em;">Fuzzy</span>
+
+- **Lujan et al.**: "A fuzzy optimization model for the berth allocation problem and quay crane allocation problem (BAP+QCAP) with n quays," 2021.  
+  [https://doi.org/10.3390/jmse9020152](https://doi.org/10.3390/jmse9020152)  
+  <span style="background:#fbc02d;color:black;padding:2px 6px;border-radius:4px;font-size:0.9em;">Fuzzy</span>
+
+- **Perez-Canedo et al.**: "A multi-objective berth allocation problem in fuzzy environment," 2022.  
+  [https://doi.org/10.1016/j.neucom.2022.06.123](https://doi.org/10.1016/j.neucom.2022.06.123)  
+  <span style="background:#fbc02d;color:black;padding:2px 6px;border-radius:4px;font-size:0.9em;">Fuzzy</span>
 
 #### B4.4 Distribution-based
 
-- **Han et al.**: "A proactive approach for simultaneous berth and quay crane scheduling problem with stochastic arrival and handling time," 2010. <span style="background:#26a69a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Distribution</span>
-- **Yan et al.**: "A dynamic and flexible berth allocation model with stochastic vessel arrival times," 2019. <span style="background:#26a69a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Distribution</span>
-- **Schepler et al.**: "The stochastic discrete berth allocation problem," 2019. <span style="background:#26a69a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Distribution</span>
-- **Umang et al.**: "Real-time management of berth allocation with stochastic vessel arrivals," 2017. <span style="background:#26a69a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Distribution</span>
-- **Budipriyanto et al.**: "A stochastic berth allocation model with uncertain service process," 2017. <span style="background:#26a69a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Distribution</span>
-- **Jia et al.**: "A simulation optimization method for deep-sea vessel berth planning and feeder arrival scheduling at a container port," 2020. <span style="background:#26a69a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Distribution</span>
-- **Ursavas and Zhu**: "Optimization of berth scheduling under stochastic operational environments," 2016. <span style="background:#26a69a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Distribution</span>
-- **Zhou and Kang**: "Simulation optimization for berth allocation," 2008. <span style="background:#26a69a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Distribution</span>
+- **Han et al.**: "A proactive approach for simultaneous berth and quay crane scheduling problem with stochastic arrival and handling time," 2010.  
+  [https://doi.org/10.1016/j.ejor.2010.06.040](https://doi.org/10.1016/j.ejor.2010.06.040)  
+  <span style="background:#26a69a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Distribution</span>
+
+- **Yan et al.**: "A dynamic and flexible berth allocation model with stochastic vessel arrival times," 2019.  
+  [https://doi.org/10.1007/s11067-018-9434-x](https://doi.org/10.1007/s11067-018-9434-x)  
+  <span style="background:#26a69a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Distribution</span>
+
+- **Schepler et al.**: "The stochastic discrete berth allocation problem," 2019.  
+  [https://doi.org/10.1007/s13676-018-0136-3](https://doi.org/10.1007/s13676-018-0136-3)  
+  <span style="background:#26a69a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Distribution</span>
+
+- **Umang et al.**: "Real-time management of berth allocation with stochastic vessel arrivals," 2017.  
+  [https://doi.org/10.1007/s10951-016-0480-2](https://doi.org/10.1007/s10951-016-0480-2)  
+  <span style="background:#26a69a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Distribution</span>
+
+- **Budipriyanto et al.**: "A stochastic berth allocation model with uncertain service process," 2017.  
+  [https://doi.org/10.1016/j.ajsl.2017.09.003](https://doi.org/10.1016/j.ajsl.2017.09.003)  
+  <span style="background:#26a69a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Distribution</span>
+
+- **Jia et al.**: "A simulation optimization method for deep-sea vessel berth planning and feeder arrival scheduling at a container port," 2020.  
+  [https://doi.org/10.1016/j.trb.2020.07.006](https://doi.org/10.1016/j.trb.2020.07.006)  
+  <span style="background:#26a69a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Distribution</span>
+
+- **Ursavas and Zhu**: "Optimization of berth scheduling under stochastic operational environments," 2016.  
+  [https://doi.org/10.1016/j.ejor.2016.03.033](https://doi.org/10.1016/j.ejor.2016.03.033)  
+  <span style="background:#26a69a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Distribution</span>
+
+- **Zhou and Kang**: "Simulation optimization for berth allocation," 2008.  
+  *Link not found*  
+  <span style="background:#26a69a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Distribution</span>
 
 #### B4.5 Distributional Ambiguity
 
-- **Agra and Rodrigues**: "Distributionally robust optimization for the berth allocation problem under uncertainty," 2022. [Paper](https://doi.org/10.1016/j.trb.2022.08.001) <span style="background:#ab47bc;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Ambiguity</span> <span style="background:#6a1b9a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DRO</span>
-- **Rodrigues and Agra**: "Handling uncertainty in the quay crane scheduling problem: a unified distributionally robust decision model," 2024. <span style="background:#ab47bc;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Ambiguity</span> <span style="background:#6a1b9a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DRO</span>
-- **Wang et al.**: "Optimizing integrated berth allocation and quay crane assignment: A distributionally robust approach," 2025. [Paper](https://doi.org/10.1016/j.ejor.2024.06.040) <span style="background:#ab47bc;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Ambiguity</span> <span style="background:#6a1b9a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DRO</span>
-- **Wang et al.**: "Distributionally robust chance-constrained optimization for the integrated berth allocation and quay crane assignment problem," 2024. [Paper](https://doi.org/10.1016/j.cor.2024.106786) <span style="background:#ab47bc;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Ambiguity</span> <span style="background:#6a1b9a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DRO</span>
-- **Tang et al.**: "Distributionally robust programming of berth-allocation-with-crane-allocation problem with uncertain quay-crane-handling efficiency," 2023. <span style="background:#ab47bc;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Ambiguity</span> <span style="background:#6a1b9a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DRO</span>
+- **Agra and Rodrigues**: "Distributionally robust optimization for the berth allocation problem under uncertainty," 2022.  
+  [https://doi.org/10.1016/j.trb.2022.08.001](https://doi.org/10.1016/j.trb.2022.08.001)  
+  <span style="background:#ab47bc;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Ambiguity</span> <span style="background:#6a1b9a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DRO</span>
+
+- **Rodrigues and Agra**: "Handling uncertainty in the quay crane scheduling problem: a unified distributionally robust decision model," 2024.  
+  *Link not found (DOI 10.1002/net.22190)*  
+  <span style="background:#ab47bc;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Ambiguity</span> <span style="background:#6a1b9a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DRO</span>
+
+- **Wang et al.**: "Optimizing integrated berth allocation and quay crane assignment: A distributionally robust approach," 2025.  
+  [https://doi.org/10.1016/j.ejor.2024.06.040](https://doi.org/10.1016/j.ejor.2024.06.040)  
+  <span style="background:#ab47bc;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Ambiguity</span> <span style="background:#6a1b9a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DRO</span>
+
+- **Wang et al.**: "Distributionally robust chance-constrained optimization for the integrated berth allocation and quay crane assignment problem," 2024.  
+  [https://doi.org/10.1016/j.cor.2024.106786](https://doi.org/10.1016/j.cor.2024.106786)  
+  <span style="background:#ab47bc;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Ambiguity</span> <span style="background:#6a1b9a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DRO</span>
+
+- **Tang et al.**: "Distributionally robust programming of berth-allocation-with-crane-allocation problem with uncertain quay-crane-handling efficiency," 2023.  
+  *Link not found*  
+  <span style="background:#ab47bc;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">Ambiguity</span> <span style="background:#6a1b9a;color:white;padding:2px 6px;border-radius:4px;font-size:0.9em;">DRO</span>
 
 ---
 
@@ -247,6 +612,7 @@ The literature is divided into two main groups:
 - Some papers naturally belong to **multiple categories**.
 - The current grouping is built from the literature already present in your `ref.bib` and discussed in `TITS_template.tex`.
 - The same paper may appear in multiple places because this README is intended as a **taxonomy-oriented index**, not a de-duplicated bibliography.
+- For papers without a working link, a note is provided. Most missing links are due to inaccessible DOIs, preprints, or conference proceedings not indexed online.
 
 ---
 
