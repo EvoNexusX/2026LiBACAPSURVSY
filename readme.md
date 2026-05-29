@@ -14,7 +14,7 @@ The experimental framework of this paper is inspired by the following works. To 
 
 ---
 
-#### I. Without Robust Strategies
+#### I. Encoding Scheme Selection
 
 ##### 1.1 Direct Representation
 
@@ -70,7 +70,7 @@ The experimental framework of this paper is inspired by the following works. To 
 
 ---
 
-#### II. With Robust Strategies
+#### II. Robustness-Guided Search Dynamics
 
 ##### 2.1 Robustness-Guided Exploration
 
