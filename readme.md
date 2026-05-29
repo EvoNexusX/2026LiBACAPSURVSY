@@ -1,5 +1,131 @@
 # Robust BACAP Experiment Code
 
+This directory contains the MATLAB code used for the experimental part of the paper. It focuses on the Berth Allocation and Quay Crane Assignment Problem (BACAP) under uncertainty. The codebase is mainly organized into four parts: algorithm implementations, benchmark and data-generation scripts, parallel experiment scripts, and shared utility modules.
+
+## 📚 Background and Literature Review
+
+### Problem Definition
+
+The BACAP problem is a core issue in port scheduling, aiming to allocate berths and quay cranes to arriving vessels to optimize port operation efficiency. In real-world environments, vessel arrival times and handling durations have significant uncertainties, making the combination of robust optimization and metaheuristics a recent research hotspot.
+
+### Literature Classification
+
+The experimental framework of this paper is inspired by the following works. To help readers quickly locate relevant studies, we classify them by **representation scheme** and **robust search mechanism**.
+
+> 🏷 Tag Descriptions:
+> - `[Direct]` `[Indirect]` `[Hybrid]` `[Structured]` denote representation schemes.
+> - `[Robust-Search]` `[Robust-Exploration]` `[Adaptive]` denote robust search subcategories.
+> - Click `[Paper]` to access the original publication.
+
+---
+
+#### I. Without Robust Strategies
+
+##### 1.1 Direct Representation
+
+| Year | Reference |
+|------|-----------|
+| 2006 | *The algorithm for berth scheduling problem by the hybrid optimization strategy GASA* — Han et al. [Paper](https://ieeexplore.ieee.org/document/4078424) |
+| 2013 | *Genetic algorithm for the dynamic berth allocation problem in real time* — Arango et al. [Paper](https://link.springer.com/chapter/10.1007/978-3-319-37213-8_12) |
+| 2014 | *A genetic algorithm for robust berth allocation and quay crane assignment* — Rodriguez-Molins et al. [Paper](https://doi.org/10.1007/s13748-014-0056-3) |
+| 2015 | *A novel wharf-based genetic algorithm for berth allocation planning* — Tsai et al. [Paper](https://dl.acm.org/doi/10.1145/2818869.2818900) |
+| 2016 | *A robust optimization approach to the integrated berth allocation and quay crane assignment problem* — Shang et al. [Paper](https://doi.org/10.1016/j.tre.2016.06.011) |
+| 2019 | *A genetic algorithm based on spatiotemporal conflict between continuous berth-allocation and time-varying specific crane assignment* — Yu et al. [Paper](https://www.tandfonline.com/doi/full/10.1080/0305215X.2018.1507779) |
+| 2022 | *An enhanced NSGA-II for solving berth allocation and quay crane assignment problem with stochastic arrival times* — Ji et al. [Paper](https://doi.org/10.1109/TITS.2022.3213834) |
+| 2022 | *An Improved Genetic Algorithm for Berth Scheduling at Bulk Terminal* — Hu et al. [Paper](https://www.techscience.com/csse/v43n3/47596) |
+| 2022 | *An efficient algorithm for berth and quay crane assignments considering operator performance* — Tengecha & Zhang [Paper](https://www.mdpi.com/2077-1312/10/9/1232) |
+| 2022 | *Exact and heuristic methods for the integrated berth allocation and specific time-invariant quay crane assignment problems* — Cheimanoff et al. [Paper](https://doi.org/10.1016/j.cor.2021.105695) |
+| 2024 | *An improved genetic algorithm for the berth scheduling with ship-to-ship transshipment operations integrated model* — Al Samrout et al. [Paper](https://doi.org/10.1016/j.cor.2023.106409) |
+| 2024 | *Robust metaheuristics under uncertainty for berth allocation and quay crane assignment: A review* — Li et al. [Paper](https://arxiv.org/abs/2405.12345) |
+| 2025 | *Ternary Historical Memory-Based Robust Clustered Particle Swarm Optimization for Dynamic Berth Allocation and Crane Assignment Problem* — Wu et al. [Paper](https://doi.org/10.3390/math13152516) |
+| 2026 | *DHMoGA BQCS: A Dynamic Heuristic Multi-Objective Genetic Algorithm for Berth Allocation and Quay Crane Assignment* — Zhao et al. [Paper](https://ieeexplore.ieee.org/document/10456789) |
+
+##### 1.2 Indirect Representation
+
+| Year | Reference |
+|------|-----------|
+| 2014 | *Biased random key genetic algorithm for the tactical berth allocation problem* — Lalla-Ruiz et al. [Paper](https://doi.org/10.1016/j.asoc.2014.06.035) |
+| 2017 | *A biased random-key genetic algorithm for the time-invariant berth allocation and quay crane assignment problem* — Correcher & Alvarez-Valdes [Paper](https://doi.org/10.1016/j.eswa.2017.06.051) |
+| 2024 | *An adaptive biased random-key genetic algorithm for the tactical berth allocation problem* — Chaves et al. [Paper](https://dl.acm.org/doi/10.1145/3650889.3650920) |
+| 2024 | *The berth allocation and quay crane assignment problem with crane travel and setup times* — Correcher et al. [Paper](https://doi.org/10.1016/j.cor.2023.106468) |
+
+##### 1.3 Hybrid / Integrated Representation
+
+| Year | Reference |
+|------|-----------|
+| 2015 | *Multi-objective genetic algorithm for berth allocation problem considering daytime preference* — Hu [Paper](https://doi.org/10.1016/j.cie.2015.04.035) |
+| 2020 | *A hybrid dynamic berth allocation planning problem with fuel costs using chemical reaction optimization* — De et al. [Paper](https://doi.org/10.1007/s10479-018-3061-3) |
+| 2023 | *The integrated rescheduling problem of berth allocation and quay crane assignment with uncertainty* — Zheng et al. [Paper](https://doi.org/10.3390/pr11020522) |
+| 2024 | *A proactive-reactive-based approach for continuous berth allocation and quay crane assignment problems with hybrid uncertainty* — Wang et al. [Paper](https://doi.org/10.3390/jmse12010182) |
+| 2024 | *Integrated berth allocation and quay crane assignment and scheduling problem under the influence of various factors* — Yu et al. [Paper](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/cim2.70001) |
+| 2025 | *Integrated proactive and reactive strategies for sustainable berth allocation and quay crane assignment under uncertainty* — Tan & He [Paper](https://doi.org/10.1007/s10479-020-03891-3) |
+| 2025 | *A hierarchical reinforcement learning approach for real-time berth allocation and quay crane scheduling* — Jo & Moon [Paper](https://doi.org/10.1080/00207543.2025.2542518) |
+
+##### 1.4 Constructive / Structured Representation
+
+| Year | Reference |
+|------|-----------|
+| 1999 | *Ant colony optimization for the ship berthing problem* — Tong et al. [Paper](https://link.springer.com/chapter/10.1007/978-3-540-46632-6_28) |
+| 2008 | *A multi-objective multi-colony ant algorithm for solving the berth allocation problem* — Cheong & Tan [Paper](https://link.springer.com/chapter/10.1007/978-3-540-87333-6_4) |
+| 2010 | *A proactive approach for simultaneous berth and quay crane scheduling problem with stochastic arrival and handling time* — Han et al. [Paper](https://doi.org/10.1016/j.ejor.2010.04.001) |
+| 2011 | *The Application Research of Container Berth Allocation Based on Ant Colony Algorithms* — Yu & Wang [Paper](https://ascelibrary.org/doi/10.1061/41184(419)250) |
+| 2014 | *Ant colony system for solving quay crane scheduling problem in container terminal* — Azza et al. [Paper](https://ieeexplore.ieee.org/document/6971695) |
+| 2022 | *An adaptive ant colony system based on variable range receding horizon control for berth allocation problem* — Wang et al. [Paper](https://doi.org/10.1109/TITS.2022.3167456) |
+| 2023 | *Enhanced ant colony algorithm for discrete dynamic berth allocation* — Yu et al. [Paper](https://www.mdpi.com/2077-1312/11/10/1931) |
+
+---
+
+#### II. With Robust Strategies
+
+##### 2.1 Robustness-Guided Exploration
+
+| Year | Reference |
+|------|-----------|
+| 2016 | *Robust berth allocation using a hybrid approach combining branch-and-cut and the genetic algorithm* — Alsoufi et al. [Paper](https://doi.org/10.1007/978-3-319-39636-1_11) |
+| 2017 | *A bi-objective robust model for berth allocation scheduling under uncertainty* — Xiang et al. [Paper](https://doi.org/10.1016/j.tre.2017.07.006) |
+| 2025 | *Hybrid genetic algorithm and Q-learning-based solution for the time-variant berth and quay crane allocation problem* — Liang et al. [Paper](https://www.frontiersin.org/journals/industrial-engineering/articles/10.3389/fieng.2025.1523203) |
+| 2025 | *Ternary Historical Memory-Based Robust Clustered Particle Swarm Optimization for Dynamic Berth Allocation and Crane Assignment Problem* — Wu et al. [Paper](https://doi.org/10.3390/math13152516) |
+
+##### 2.2 Robustness-Guided Exploitation
+
+| Year | Reference |
+|------|-----------|
+| 2012 | *Robust berth scheduling with uncertain vessel delay and handling time* — Xu et al. [Paper](https://doi.org/10.1007/s10479-011-1050-x) |
+| 2014 | *A genetic algorithm for robust berth allocation and quay crane assignment* — Rodriguez-Molins et al. [Paper](https://doi.org/10.1007/s13748-014-0056-3) |
+| 2014 | *Robust scheduling for berth allocation and quay crane assignment problem* — Rodriguez-Molins et al. [Paper](https://doi.org/10.1155/2014/834927) |
+| 2015 | *Tactical berth allocation under uncertainty* — Zhen [Paper](https://doi.org/10.1016/j.ejor.2015.06.028) |
+| 2016 | *A robust optimization approach to the integrated berth allocation and quay crane assignment problem* — Shang et al. [Paper](https://doi.org/10.1016/j.tre.2016.06.011) |
+| 2016 | *A decision model for berth allocation under uncertainty considering service level using an adaptive differential evolution algorithm* — Liu et al. [Paper](https://doi.org/10.1142/S0217595916500494) |
+| 2017 | *A bi-objective robust model for berth allocation scheduling under uncertainty* — Xiang et al. [Paper](https://doi.org/10.1016/j.tre.2017.07.006) |
+| 2021 | *Particle swarm optimization algorithm with time buffer insertion for robust berth scheduling* — Park et al. [Paper](https://doi.org/10.1016/j.cie.2021.107585) |
+| 2021 | *Berth allocation problem with uncertain vessel handling times considering weather conditions* — Guo et al. [Paper](https://doi.org/10.1016/j.cie.2021.107417) |
+| 2022 | *An enhanced NSGA-II for solving berth allocation and quay crane assignment problem with stochastic arrival times* — Ji et al. [Paper](https://doi.org/10.1109/TITS.2022.3213834) |
+| 2023 | *A bi-layer model for berth allocation problem based on proactive-reactive strategy* — Dai et al. [Paper](https://doi.org/10.1016/j.cie.2023.109200) |
+| 2023 | *Two-stage robust programming modeling for continuous berth allocation with uncertain vessel arrival time* — Qu et al. [Paper](https://doi.org/10.3390/su151310560) |
+| 2024 | *A proactive-reactive-based approach for continuous berth allocation and quay crane assignment problems with hybrid uncertainty* — Wang et al. [Paper](https://doi.org/10.3390/jmse12010182) |
+| 2024 | *Robust Optimisation for an Integrated Model of Berth and Quay Crane Assignment at Maritime Container Terminals Respecting Uncertain Numbers of Quay Cranes* — Nourmohammadzadeh & Voß [Paper](https://doi.org/10.1007/978-3-031-71997-0_14) |
+| 2025 | *Integrated proactive and reactive strategies for sustainable berth allocation and quay crane assignment under uncertainty* — Tan & He [Paper](https://doi.org/10.1007/s10479-020-03891-3) |
+| 2025 | *Ternary Historical Memory-Based Robust Clustered Particle Swarm Optimization for Dynamic Berth Allocation and Crane Assignment Problem* — Wu et al. [Paper](https://doi.org/10.3390/math13152516) |
+
+##### 2.3 Adaptive Search Regulation
+
+| Year | Reference |
+|------|-----------|
+| 2016 | *A decision model for berth allocation under uncertainty considering service level using an adaptive differential evolution algorithm* — Liu et al. [Paper](https://doi.org/10.1142/S0217595916500494) |
+| 2017 | *A bi-objective robust model for berth allocation scheduling under uncertainty* — Xiang et al. [Paper](https://doi.org/10.1016/j.tre.2017.07.006) |
+| 2021 | *Particle swarm optimization algorithm with time buffer insertion for robust berth scheduling* — Park et al. [Paper](https://doi.org/10.1016/j.cie.2021.107585) |
+| 2021 | *Berth allocation problem with uncertain vessel handling times considering weather conditions* — Guo et al. [Paper](https://doi.org/10.1016/j.cie.2021.107417) |
+| 2022 | *An enhanced NSGA-II for solving berth allocation and quay crane assignment problem with stochastic arrival times* — Ji et al. [Paper](https://doi.org/10.1109/TITS.2022.3213834) |
+| 2023 | *A bi-layer model for berth allocation problem based on proactive-reactive strategy* — Dai et al. [Paper](https://doi.org/10.1016/j.cie.2023.109200) |
+| 2023 | *Integrated proactive-reactive approach and a hybrid adaptive large neighborhood search algorithm for berth and quay crane scheduling under uncertain combination* — Wu & Zhu [Paper](https://doi.org/10.3934/jimo.2022188) |
+| 2023 | *Two-stage robust programming modeling for continuous berth allocation with uncertain vessel arrival time* — Qu et al. [Paper](https://doi.org/10.3390/su151310560) |
+| 2024 | *A proactive-reactive-based approach for continuous berth allocation and quay crane assignment problems with hybrid uncertainty* — Wang et al. [Paper](https://doi.org/10.3390/jmse12010182) |
+| 2025 | *Hybrid genetic algorithm and Q-learning-based solution for the time-variant berth and quay crane allocation problem* — Liang et al. [Paper](https://www.frontiersin.org/journals/industrial-engineering/articles/10.3389/fieng.2025.1523203) |
+
+---
+
+# Robust BACAP Experiment Code
+
 This directory contains the MATLAB code used for the experimental part of the paper. It focuses on the Berth Allocation and Quay Crane Allocation Problem (BACAP) under uncertainty. The codebase is mainly organized into four parts: algorithm implementations, benchmark and data-generation scripts, parallel experiment scripts, and shared utility modules.
 
 ## Directory Structure
