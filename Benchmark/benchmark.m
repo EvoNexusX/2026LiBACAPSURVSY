@@ -22,7 +22,7 @@ function [average_port_time, robustness_index] = benchmark(ship, crane, tidalwin
         if available == 0
             adjusted_D(i) = 2 * D(i);  % No valid crane: penalty
         else
-            adjusted_D(i) = D(i) * (available / qc_sum(i));  % More available cranes => faster
+            adjusted_D(i) = D(i) * qc_sum(i) / available; 
         end
     end
 
