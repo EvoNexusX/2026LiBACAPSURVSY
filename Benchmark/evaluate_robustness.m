@@ -21,7 +21,7 @@ function robustness_index = evaluate_robustness(ship, crane, tidalwindow, soluti
         if available == 0
             adjusted_D(i) = 2 * D(i);  % Penalty for invalid crane assignment
         else
-            adjusted_D(i) = D(i) * (available / qc_sum(i));
+            adjusted_D(i) = D(i) * qc_sum(i) / available;
         end
     end
 
