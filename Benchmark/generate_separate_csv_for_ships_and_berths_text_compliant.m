@@ -23,19 +23,19 @@ function [ship_data, berth_data, qc_time_data, weather_state_data, efficiency_st
     % col 1: nominal arrival time a_i
     % col 2: cargo/load or weight
     % col 3: vessel length
-    % col 4: nominal handling duration h_i^0 OR required QC depending on old file format
+    % col 4: nominal handling duration h_i^0 
     % col 5: fuel consumption
-    % col 6: nominal handling duration h_i^0 OR required QC depending on old file format
+    % col 6: required QC 
     %
     % To preserve compatibility with the first code, this function assumes:
     % ship(:,1) = nominal arrival time
     % ship(:,2) = cargo/load
     % ship(:,3) = vessel length
-    % ship(:,4) = required QC number
+    % ship(:,4) = nominal handling duration
     % ship(:,5) = fuel consumption
-    % ship(:,6) = nominal handling duration
+    % ship(:,6) = required QC number
     if size(ship, 2) < 6
-        error('ship input must contain at least 6 columns: arrival, cargo, length, required QC, fuel, nominal handling duration.');
+        error('ship input must contain at least 6 columns: arrival, cargo, length,nominal handling duration, fuel, required QC.');
     end
     if size(qc, 2) < 2
         error('berth/QC input must contain at least 2 columns: QC ID and initial availability.');
@@ -44,9 +44,9 @@ function [ship_data, berth_data, qc_time_data, weather_state_data, efficiency_st
     a = ship(:, 1);          % nominal arrival time
     ship_w = ship(:, 2);     % cargo/load
     ship_len = ship(:, 3);   % vessel length
-     h0 = ship(:, 4);    % required/planned QC number
+     h0 = ship(:, 4);    %  nominal handling duration
     ship_so = ship(:, 5);    % fuel consumption
-     ship_Qm = ship(:, 6);         % nominal handling duration
+     ship_Qm = ship(:, 6);         % required/planned QC number
 
     num_ships = size(ship, 1);
     num_qc = size(qc, 1);
