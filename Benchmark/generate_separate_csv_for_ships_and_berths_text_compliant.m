@@ -206,7 +206,7 @@ function [ship_data, berth_data, qc_time_data, weather_state_data, efficiency_st
             q_real = 0;
         end
 
-        ship_data(i, :) = [actual_arrival, ship_w(i), ship_len(i), ship_Qm(i), ship_so(i), realized_handling];
+        ship_data(i, :) = [actual_arrival, ship_w(i), ship_len(i), realized_handling, ship_so(i),  ship_Qm(i)];
     end
 
     %% Output berth/QC data
